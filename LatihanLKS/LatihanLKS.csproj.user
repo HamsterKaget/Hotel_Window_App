@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="AddNewGuestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BookingRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InputPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageBookingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageDailyPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageGuestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageHolidayPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageRoomFacilityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageRoomRepairmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManageRoomTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
