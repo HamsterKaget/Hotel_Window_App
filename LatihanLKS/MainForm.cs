@@ -24,12 +24,14 @@ namespace LatihanLKS
         {
             ChangePasswordForm passwordForm = new ChangePasswordForm();
             passwordForm.Show();
+            this.Close();
         }
 
         private void bookingRoomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BookingRoomForm bookingRoom = new BookingRoomForm();
             bookingRoom.Show();
+            this.Close();
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,6 +109,11 @@ namespace LatihanLKS
         {
             ManageGuestForm manageGuest = new ManageGuestForm();
             manageGuest.Show();
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

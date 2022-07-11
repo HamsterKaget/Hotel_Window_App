@@ -45,32 +45,48 @@ namespace LatihanLKS
             string email = textBox1.Text;
             string pw = textBox2.Text;
             string sql = "SELECT * FROM Karyawan WHERE Email='" + email + "' AND Password='" + pw + "'";
-            login(sql);
 
-            
+            if ( string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text) )
+            {
+                MessageBox.Show("Email & Password harus diisi terlebih dahulu");
+            } 
+            else
+            {
+                loginData = login(sql);
+
+                if ( loginData == null )
+                {
+                    MessageBox.Show("Email atau Password anda salah !");
+                }
+                else if (loginData[2].ToString() == email && loginData[3].ToString() == pw )
+                {
+                    this.Hide();
+                    MainForm main = new MainForm();
+                    main.Show();
+                }
+            }            
 
         }
 
-        private void login(string sql)
+        private string[] login(string sql)
         {
             SqlConnection db = new SqlConnection(sqlconn);
             SqlDataAdapter sda = new SqlDataAdapter(sql, db);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            string[] Arr = null;
 
-                if (string.IsNullOrEmpty(textBox1.Text) || string.IsNullOrEmpty(textBox2.Text))
-                {
-                    MessageBox.Show("Semua Field Harus Diisi");
-                } else if ( dt.Rows.Count > 0 )
-                {
-                    this.Hide();
-                    MainForm main = new MainForm();
-                    main.Show();
-                } else
-                {
-                    MessageBox.Show("Please Try Again, Your Data is not Valid!");
-                }
+            try
+            {
+                Arr = dt.Rows[0].ItemArray.Select(x => x.ToString()).ToArray();
 
+            } catch ( Exception )
+            {
+                return Arr;
+            }
+
+            return Arr;
         }
+
     }
 }

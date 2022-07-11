@@ -80,6 +80,7 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(39, 21);
             this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 
@@ -116,28 +117,28 @@
             // bookingRoomToolStripMenuItem
             // 
             this.bookingRoomToolStripMenuItem.Name = "bookingRoomToolStripMenuItem";
-            this.bookingRoomToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bookingRoomToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.bookingRoomToolStripMenuItem.Text = "Booking Room";
             this.bookingRoomToolStripMenuItem.Click += new System.EventHandler(this.bookingRoomToolStripMenuItem_Click);
             // 
             // roomManagementToolStripMenuItem
             // 
             this.roomManagementToolStripMenuItem.Name = "roomManagementToolStripMenuItem";
-            this.roomManagementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.roomManagementToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.roomManagementToolStripMenuItem.Text = "Manage Booking";
             this.roomManagementToolStripMenuItem.Click += new System.EventHandler(this.roomManagementToolStripMenuItem_Click);
             // 
             // inputPaymentToolStripMenuItem
             // 
             this.inputPaymentToolStripMenuItem.Name = "inputPaymentToolStripMenuItem";
-            this.inputPaymentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inputPaymentToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.inputPaymentToolStripMenuItem.Text = "Input Payment";
             this.inputPaymentToolStripMenuItem.Click += new System.EventHandler(this.inputPaymentToolStripMenuItem_Click);
             // 
             // viewPaymentToolStripMenuItem
             // 
             this.viewPaymentToolStripMenuItem.Name = "viewPaymentToolStripMenuItem";
-            this.viewPaymentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewPaymentToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.viewPaymentToolStripMenuItem.Text = "View Payment";
             this.viewPaymentToolStripMenuItem.Click += new System.EventHandler(this.viewPaymentToolStripMenuItem_Click);
             // 

@@ -107,6 +107,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ChangePasswordForm
             // 
@@ -123,6 +124,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ChangePasswordForm";
             this.Text = "Semerbak Bunga Hotel : Change Password Form";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ChangePasswordForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
